@@ -272,6 +272,20 @@ ggp5+
   scale_y_continuous(labels= comma)
 ```
 
+```{r}
+# chandrark, add comments
+ggp6 <- ggplot(data = accidents)+
+  geom_bar(mapping = aes(x = Severity))+
+  facet_wrap(~s_year,nrow = 4)+ 
+  labs(x= "Severity in each year",
+       y= "Number of Accidents",
+       title = "Severity by years")
+
+ggp6+ 
+  scale_y_continuous(labels= comma)
+```
+
+
 # Conclusion
 After the study, we learned that accidents happen mostly in fair weather condition day time in December. We also discovered that visibility is not a important factor coming to an accident. Using the plots created, it is easy to analysis the factors to accidents which could be contributed to improvement in the future.
 
